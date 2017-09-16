@@ -7,17 +7,17 @@ To see which local files have changed and need uploading, navigate to StudentFil
 git status
 ```
 
-To commit files, you first need to track the changes. So if you want to track `StudentName/main.py` enter:
+To commit a new file, you first need to track the changes. So if you want to track `StudentName/main.py` enter:
 ```
 git add StudentName/main.py
 ```
 
-Then commit:
+To commit a newly tracked file, or a modified file:
 ```
-git commit -m "new python file from StudentName"
+git commit -m "new/changed file from StudentName"
 ```
 
-Then push:
+To send commits to the server:
 ```
 git push
 ```
