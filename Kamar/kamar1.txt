@@ -1,0 +1,21 @@
+# Welcome to Sonic Pi v3.0
+
+
+
+# Welcome to Sonic Pi v3.0.1
+4.times do
+  sample :drum_cymbal_open
+  sleep 1
+  sample :drum_bass_hard
+  sleep 1
+  sample :drum_snare_hard
+  sleep 1
+  sample :drum_cymbal_closed
+  sleep 1
+  sample :drum_bass_soft
+  sleep 1
+  sample :drum_cymbal_hard
+end
+
+
+
