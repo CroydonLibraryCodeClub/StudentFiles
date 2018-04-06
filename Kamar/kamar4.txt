@@ -1,0 +1,7 @@
+#welcome to
+sample :ambi_choir
+sample :ambi_choir, rate: 0.3
+4.times do
+  sample :ambi_choir, rate: 3
+  sleep 0.5
+end
