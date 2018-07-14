@@ -1,0 +1,15 @@
+print("******************************************************")
+print("Welcome to the sequel to the Avenger Infinity War Quiz")
+print("The next best game")
+print("The Marvel Guessing Game")
+print("*******************************************************")
+print("\n")
+print("")
+print("Clue 1. This hero is known to be with the guardians of the galaxy")
+print("Clue 2. His first name is Sam")
+print("Clue 3. He is known as the Human Rocket")
+choice=input("Who is it? Type in a hero to guess!")
+if choice.upper() == "NOVA":
+    print("Well done, that's right!")
+else:
+    print("Wrong. The correct answer is Nova!")
