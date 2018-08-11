@@ -22,7 +22,7 @@ print("Hero or heroine 2")
 print("*******************************************************")
 print("\n")
 print("Clue 1. He brought the avengers together")
-print("Clue 2. He is  very important at S.H.I.E.L.D")
+print("Clue 2. He is very important at S.H.I.E.L.D")
 print("Clue 3. He is a commander on the helicarrier")
 choice=input("Who is it? Type in a hero to guess!")
 if choice.upper().strip() == "NICK FURY":
