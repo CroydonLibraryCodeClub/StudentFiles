@@ -1,5 +1,7 @@
 print("\n") # Blank lines ("\n" means "new line")
+print("*****************************************************************")
 print("Welcome to the ultimate immpossible Avengers Infinity war quiz!!!")
+print("*****************************************************************")
 score = 0
 print("\n") # Blank lines ("\n" means "new line")
 print(" Qustion 1. Who is the main villian of Infinity war?")
@@ -43,7 +45,7 @@ if choice == "C" or choice == "c":
     score = score + 1
 else:
     print("Wrong, wrong, wrong!")
-
+print("\n")
 print(".Question 4 Who nearly killed Thanos?")
 print("A. Iron man")
 print("B. Spider man")
@@ -61,7 +63,9 @@ print("\n")
 
 print("The end of the infinity war quiz! You scored " + str(score))
 print("\n")
+print("**************************************************")
 print("Nice. Now give this next quiz... Marvel knowledge!")
+print("**************************************************")
 print("\n")
 score = 0
 print(".Question 1. What is Star-lord's really name?")
