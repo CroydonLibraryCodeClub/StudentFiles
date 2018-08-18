@@ -118,7 +118,70 @@ if choice == "B" or choice == "b":
     score = score + 1
 else:
     print("Wrong, wrong, wrong!")
-print("\n")
+
+
 print("The end of the infinity war quiz! You scored " + str(score))
+
+print("Wow, you are really good at this.")
+print("Now try the third section that will be split into three parts")
+score = 0
+print("Part 1: Spiderman Homecoming")
+print("\n")
+print(".Question 1. Who is the vulture?")
+print("A. Erik Stevens")
+print("B. Adrian Toomes")
+print("C. Tony Stark")
+print("D. Peter Quill")
+choice = input("Type in a letter to guess: ")
+
+if choice == "B" or choice == "b":
+    print("Well done, that's right!")
+    score = score + 1
+else:
+    print("Wrong, wrong, wrong!") 
+print("\n")
+print(".Question 2. What is the name of the super hero that gave Spidey his new suit?")
+print("A. Killmonger")
+print("B. Winter Solider")
+print("C. Iron man")
+print("D. Captain America")
+choice = input("Type in a letter to guess: ")
+
+if choice == "C" or choice == "c":
+    print("Well done, that's right!")
+    score = score + 1
+else:
+    print("Wrong, wrong, wrong!")
+print("\n")
+print(".Question 3. Who is Spiderman's best friend?")
+print("A. MJ")
+print("B. Adrian Toomes")
+print("C. The Shocker")
+print("D. Ned")
+choice = input("Type in a letter to guess: ")
+
+if choice == "D" or choice == "d":
+    print("Well done, that's right!")
+    score = score + 1
+else:
+    print("Wrong, wrong, wrong!")
+print("The end of Part 1: Spiderman Homecoming! You scored " + str(score))
+
+print("Part 2: Avengers Civil War")
+
+print("\n")
+print(".Question 1. Who led the two sides?")
+print("A. Spider man and Black Panther")
+print("B. Thanos and Ronan")
+print("C. Captain America and Iron man")
+print("D. DDtar-lord and Yondu")
+choice = input("Type in a letter to guess: ")
+
+if choice == "C" or choice == "c":
+    print("Well done, that's right!")
+    score = score + 1
+else:
+    print("Wrong, wrong, wrong!")
+
 input("\nPress ENTER to exit program")
 
