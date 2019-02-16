@@ -12,6 +12,14 @@ public class MoveForward : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(Vector3.forward * Time.deltaTime * speed);
+		float steer = Input.GetAxis("Horizontal");
+		transform.Translate((Vector3.forward + Vector3.right * steer) * Time.deltaTime * speed);
+
+		if (transform.position.z > 0.0f)
+		{
+			Vector3 position = transform.position;
+			position.z -= 500.0f;
+			transform.position = position;
+		}
 	}
 }
