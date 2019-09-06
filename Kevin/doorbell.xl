@@ -1,0 +1,5 @@
+# Welcome to Sonic Pi v2.10
+
+play 72
+sleep 1
+play 76
