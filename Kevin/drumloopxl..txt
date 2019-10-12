@@ -1,0 +1,12 @@
+#drumloop
+4. times do
+  sample :drum_snare_hard
+  sleep 1
+  sample :drum_bass_hard
+  sleep 1
+  sample :drum_snare_hard
+  sleep 1
+  sample :drum_bass_hard
+  sleep 1
+end
+
