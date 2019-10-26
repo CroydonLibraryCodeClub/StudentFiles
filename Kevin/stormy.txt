@@ -1,0 +1,6 @@
+#stormy night
+sample :ambi_swoosh, rate: 0.3
+4.times do
+  sample :misc_crow
+  sleep 1
+end

@@ -1,0 +1,5 @@
+#bounce
+4. times do
+  sample :elec_twip, rate: 0.1
+  sleep 1
+end
