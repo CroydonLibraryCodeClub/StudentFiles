@@ -3,6 +3,10 @@
     get : function(key) {
       return config[key];
     },
+    planName : function(plan) {
+      var plans = this.get('plans');
+      return _.find(plans, plan)[plan];
+    },
     prefix : function(path, type) {
       if (path.charAt(0) !== '/') {
         path = '/' + path;
