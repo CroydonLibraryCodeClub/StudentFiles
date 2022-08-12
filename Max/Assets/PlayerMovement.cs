@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(0, 14f);
+            animator.SetTrigger("Jump");
+            animator.ResetTrigger("Landed");
+            
         }
 
         float input = Input.GetAxis("Horizontal");
@@ -29,4 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
         
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        animator.SetTrigger("Landed");
+        animator.ResetTrigger("Jump");
+    }
+
 }
