@@ -46,4 +46,9 @@ public class PlayerMovement : MonoBehaviour
             timer = 0;
         }
     }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+		Debug.Log("Collision detected");
+	}
 }
