@@ -33,6 +33,7 @@ public class BoxSpawner : MonoBehaviour
             delivered = 0;
             spawn++;
             SpawnBoxes();
+            FindObjectOfType<Timer>().SendMessage("AddTime", spawn);
         }
     }
 }

@@ -27,4 +27,9 @@ public class Timer : MonoBehaviour
             enabled = false;
         } 
     }
+
+    void AddTime(int bonus)
+    {
+        timer += bonus;
+    }
 }

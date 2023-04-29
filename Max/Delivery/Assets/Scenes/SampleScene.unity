@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   physics: {fileID: 426265564}
-  force: 40
+  force: 4
   speed: 6
 --- !u!50 &426265564
 Rigidbody2D:
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1775786986021892966, guid: 9f57d2ce38c1d6ebfb82739af3c45aa2, type: 3}
-  width: 5.6
+  width: 8
   height: 4
 --- !u!4 &1179029694
 Transform:
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
