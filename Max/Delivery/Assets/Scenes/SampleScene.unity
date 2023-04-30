@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   physics: {fileID: 426265564}
-  force: 4
+  force: 40
   speed: 6
 --- !u!50 &426265564
 Rigidbody2D:
