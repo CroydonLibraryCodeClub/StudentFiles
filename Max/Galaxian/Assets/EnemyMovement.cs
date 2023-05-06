@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
 	private float dir;
 	public float leftmax;
 	public float rightmax;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,4 +33,14 @@ public class EnemyMovement : MonoBehaviour
         
         transform.position = position;
     }
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Bullet"))
+        {
+           animator.SetTrigger("Shot");
+           Destroy(gameObject, 0.16f);
+        }
+        
+    }
+
 }
