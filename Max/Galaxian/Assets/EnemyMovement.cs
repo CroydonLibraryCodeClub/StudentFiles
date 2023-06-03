@@ -13,26 +13,55 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         dir=1;
+        StartCoroutine(Patrol());
     }
 
     // Update is called once per frame
-    void Update()
+    IEnumerator Patrol()
     {
-        Vector3 position = transform.position;
-        
-        position.x += speed * dir;
-        
-        if (position.x < leftmax)
+        PlayerMovement player = FindObjectOfType<PlayerMovement>();
+        while (true)
         {
-			dir = 1;
-		}
-		if (position.x > rightmax)
-        {
-			dir = -1;
-		}
-        
-        transform.position = position;
+            Vector3 position = transform.position;
+            
+            position.x += speed * dir;
+            
+            if (position.x < leftmax)
+            {
+                dir = 1;
+            }
+            if (position.x > rightmax)
+            {
+                dir = -1;
+            }
+            
+            transform.position = position;
+
+            if (position.x == player.transform.position.x)
+            {
+                break;
+            }
+
+            yield return null;
+        }
+
+        StartCoroutine(Dive());
     }
+
+    IEnumerator Dive()
+    {
+        while (true)
+        {
+            Vector3 position = transform.position;
+            
+            position.y -= speed;
+
+            transform.position = position;
+            
+            yield return null;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Bullet"))
