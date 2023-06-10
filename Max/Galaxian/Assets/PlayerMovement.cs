@@ -7,7 +7,11 @@ public class PlayerMovement : MonoBehaviour
 	public float leftmax;
 	public float rightmax;
 	public float speed;
-    // Start is called before the first frame update
+
+    public Animator animator;
+
+    new public Renderer renderer;
+
     void Start()
     {
         
@@ -28,5 +32,23 @@ public class PlayerMovement : MonoBehaviour
 			position.x = rightmax;
 		}
         transform.position = position;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Enemy"))
+        {
+            StartCoroutine(Explode());
+        }
+    }
+
+    IEnumerator Explode()
+    {
+        animator.SetTrigger("Explode");
+        yield return new WaitForSeconds(0.16f);
+        renderer.enabled = false;
+        yield return new WaitForSeconds(5.0f);
+        renderer.enabled = true;
+
     }
 }

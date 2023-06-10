@@ -8,6 +8,8 @@ public class EnemyMovement : MonoBehaviour
 	private float dir;
 	public float leftmax;
 	public float rightmax;
+
+    public float diveNumber;
     public Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -37,7 +39,7 @@ public class EnemyMovement : MonoBehaviour
             
             transform.position = position;
 
-            if (position.x == player.transform.position.x)
+            if (Mathf.Abs(position.x - player.transform.position.x) < diveNumber)
             {
                 break;
             }
