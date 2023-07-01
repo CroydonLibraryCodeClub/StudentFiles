@@ -19,11 +19,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 position = transform.position;
         if (move < 0.0f)
         {
-            renderer.flipX = true;
-        }
-        else
-        {
             renderer.flipX = false;
+        }
+        else if (move>0.0f)
+        {
+            renderer.flipX = true;
         }
         position.x += move * speed * Time.deltaTime;
         transform.position = position;
