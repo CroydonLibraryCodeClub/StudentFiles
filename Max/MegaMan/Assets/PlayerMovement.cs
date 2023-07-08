@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     new public SpriteRenderer renderer;
+    public Rigidbody2D rigidbody2D;
     public float speed;
+    public float jumpForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,9 @@ public class PlayerMovement : MonoBehaviour
         }
         position.x += move * speed * Time.deltaTime;
         transform.position = position;
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            rigidbody2D.AddForce(Vector2.up * jumpForce);
+        }
     }
 }
