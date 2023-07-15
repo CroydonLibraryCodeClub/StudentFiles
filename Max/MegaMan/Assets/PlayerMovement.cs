@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rigidbody2D;
     public float speed;
     public float jumpForce;
+    bool grounded;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +31,21 @@ public class PlayerMovement : MonoBehaviour
         }
         position.x += move * speed * Time.deltaTime;
         transform.position = position;
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && grounded)
         {
             rigidbody2D.AddForce(Vector2.up * jumpForce);
         }
+        animator.SetBool("Jumping", !grounded);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log($"Touching {collision.collider.name}");
+        grounded = true;
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        grounded = false;
+        Debug.Log($"Leaving {collision.collider.name}");
     }
 }
