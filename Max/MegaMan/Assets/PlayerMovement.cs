@@ -24,10 +24,16 @@ public class PlayerMovement : MonoBehaviour
         if (move < 0.0f)
         {
             renderer.flipX = false;
+            animator.SetBool("Running", true);
         }
         else if (move>0.0f)
         {
             renderer.flipX = true;
+            animator.SetBool("Running", true);
+        }
+        else
+        {
+            animator.SetBool("Running", false);
         }
         position.x += move * speed * Time.deltaTime;
         transform.position = position;
