@@ -36,8 +36,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:cx="372.5"
-     inkscape:cy="169.5"
+     inkscape:cx="373.5"
+     inkscape:cy="89.5"
      inkscape:window-width="1883"
      inkscape:window-height="1055"
      inkscape:window-x="37"
@@ -48,7 +48,7 @@
      id="g1743"
      clip-path="url(#clipPath1745)"
      style="stroke-width:2.2;stroke-dasharray:none"
-     transform="translate(-2.9172974,-3.4685978)">
+     transform="translate(0.8495483,-8.1979069)">
     <g
        inkscape:label="Clip"
        id="g1741"
@@ -80,7 +80,7 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:3.9;stroke-dasharray:none;stroke-opacity:1"
-     d="M 60.169704,455.11212 C -256.42331,49.86271 902.80545,-134.42112 491.43382,465.67041"
+     d="M 70.636928,439.57575 C -198.13932,-92.425164 768.19285,-154.64028 540.27635,444.90259"
      id="path2206"
      sodipodi:nodetypes="cc" />
 </svg>
