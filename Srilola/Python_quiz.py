@@ -49,4 +49,3 @@ if answer == "Gemini":
 else:
     print("Sorry, that is incorrect")
     Wrong = Wrong+1
-
