@@ -20,18 +20,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.101, 0)
 script = ExtResource("1_a202f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1667617955]
-transform = Transform3D(1, 0, 0, 0, 0.97714585, 0.21256994, 0, -0.21256994, 0.97714585, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.7663137, 0.64246666, 0, -0.64246666, 0.7663137, -0.5894953, 0.10869539, -0.27757)
 shape = SubResource("SphereShape3D_a202f")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D/CollisionShape3D" unique_id=84149833]
+transform = Transform3D(0.9742193, -0.13449201, -0.18113284, -0.10370174, 0.4460734, -0.88896847, 0.20035776, 0.88483393, 0.42062634, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_a202f")
 use_collision = true
-radius = 0.175
+radius = 0.211
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1425873564]
 transform = Transform3D(1, 0, 0, 0, 0.97714585, 0.21256994, 0, -0.21256994, 0.97714585, 0, 1.1281823, 3.2384975)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Camera3D" unique_id=1280461280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04076779, -0.042723775, 0.118181705)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=2068763224]
 transform = Transform3D(1, 0, 0, 0, 0.9999996, 1.7484548e-07, 0, -1.7484548e-07, 0.9999996, 0, 0, 0)
@@ -41,3 +43,27 @@ layers = 5
 use_collision = true
 size = Vector3(10, 0.5, 10)
 material = SubResource("StandardMaterial3D_noarx")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1865704263]
+transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, 1.1026778, 0.12948275, -5.026828)
+size = Vector3(1, 19.841461, 16.035278)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1571171702]
+transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, 1.1026778, 0.12948275, -5.026828)
+size = Vector3(1, 19.841461, 16.035278)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=709241372]
+transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, -1.3274415, -7.092889, 4.435801)
+size = Vector3(1, 32.28605, 16.035278)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=81523405]
+transform = Transform3D(0.99619466, 0.08715574, -1.7465145e-07, -0.08705898, 0.99508876, 0.047106452, 0.0041057714, -0.04692718, 0.99888986, 5.2177296, -3.9981678, -5.9505706)
+size = Vector3(1.2098389, 25.503616, 25.651031)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1948147661]
+transform = Transform3D(0.99619466, 0.08715574, -1.7465145e-07, -0.08705898, 0.99508876, 0.047106452, 0.0041057714, -0.04692718, 0.99888986, -5.733685, -2.3541296, -8.0289955)
+size = Vector3(1.2098389, 25.503616, 25.651031)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=1063446671]
+transform = Transform3D(0.99619466, 0.08715574, -1.7465145e-07, -0.08705898, 0.99508876, 0.047106452, 0.0041057714, -0.04692718, 0.99888986, -5.733685, -2.3541296, -8.0289955)
+size = Vector3(1.2098389, 25.503616, 25.651031)
