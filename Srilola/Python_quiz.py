@@ -1,7 +1,11 @@
+import webbrowser
+
 Score = 0
 Wrong = 0
 
-print("Welcome to the Trivia quiz")
+url= 'https://www.youtube.com/watch?v=SbYXkOAoZpI&list=RDSbYXkOAoZpI&start_radio=1'
+name = (input("What is your name?"))
+print(f"Welcome to the Trivia quiz {name}")
 print("There will be 5 questions for you to answer")
 print("Here is the first one")
 
@@ -25,7 +29,7 @@ else:
 
 print("Question 3")
 answer=input("What is the most popular childrens author? ")
-if answer == "JK Rowling" or "Roald Dahl" :
+if answer == "JK Rowling" or answer == "Roald Dahl" :
     print("Well done! That is correct.")
     Score =Score+1
 else:
@@ -50,3 +54,21 @@ else:
     print("Sorry, that is incorrect")
     Wrong = Wrong+1
 
+print(f"Well done {name}, your score is {Score}")
+print(f"However, you got {Wrong} questions wrong")
+
+if Score == 5:
+    print("Your rank is Trivia genius")
+elif Score == 4:
+    print("Your rank is Trivia wizard")
+elif Score == 3:
+    print("Your rank is average")
+elif Score == 2:
+    print("Your rank is beginner")
+else:
+    print("Your rank is noob")
+if Score == 1:
+   webbrowser.open_new_tab(url)
+   print("shdjasas")
+else:
+    print("")
