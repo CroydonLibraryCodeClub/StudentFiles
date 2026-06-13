@@ -31,7 +31,6 @@ albedo_texture = ExtResource("3_a0tk4")
 [node name="Node3D" type="Node3D" unique_id=1623685032]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=2137326700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.101, 0)
 script = ExtResource("1_a202f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1667617955]
@@ -39,10 +38,10 @@ transform = Transform3D(1, 0, 0, 0, 0.7663137, 0.64246666, 0, -0.64246666, 0.766
 shape = SubResource("SphereShape3D_a202f")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D/CollisionShape3D" unique_id=84149833]
-transform = Transform3D(0.97849774, -0.15813735, -0.13242093, -0.024598949, 0.5479602, -0.8361433, 0.20478696, 0.8214217, 0.5322877, 0, 0, 0)
+transform = Transform3D(0.8796517, -0.23699442, -0.41236752, -0.43525445, -0.7506609, -0.4970557, -0.19174848, 0.6167212, -0.7634722, -0.068, 0, 0)
 material_override = SubResource("StandardMaterial3D_a202f")
 use_collision = true
-radius = 0.211
+radius = 0.30211845
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1425873564]
 transform = Transform3D(1, 0, 0, 0, 0.97714585, 0.21256994, 0, -0.21256994, 0.97714585, 0, 1.1281823, 3.2384975)
@@ -66,7 +65,7 @@ size = Vector3(1, 19.841461, 16.035278)
 material = SubResource("StandardMaterial3D_a0tk4")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1571171702]
-transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, 1.0874012, 0.11542559, -5.0235014)
+transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, 1.1024191, 0.08415538, -5.0113807)
 material_override = SubResource("StandardMaterial3D_jka67")
 use_collision = true
 size = Vector3(1, 19.841461, 16.035278)
@@ -92,7 +91,16 @@ transform = Transform3D(0.99619466, 0.08715574, -1.7465145e-07, -0.08705898, 0.9
 material_override = SubResource("StandardMaterial3D_wc5p8")
 size = Vector3(1.2098389, 25.503616, 25.651031)
 
+[node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=1179589626]
+transform = Transform3D(-0.02088128, 0.02858035, 0.99937356, -0.0904338, -0.9955478, 0.02658137, 0.9956835, -0.0898221, 0.023372937, -0.06589452, 1.0095015, -3.548994)
+size = Vector3(0.092285156, 0.60705566, 1.21875)
+
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=2115367572]
-transform = Transform3D(0.99847597, -0.052914795, 0.015679667, 0.05210661, 0.997482, 0.048110228, -0.018185928, -0.0472199, 0.998719, -0.014837533, -0.22141454, -3.4242182)
-radius = 0.095703125
+transform = Transform3D(0.99847597, -0.052914795, 0.015679667, 0.05210661, 0.997482, 0.048110228, -0.018185928, -0.0472199, 0.998719, -0.117664814, 0.03896694, -3.6522248)
+radius = 0.047851563
 height = 1.5651855
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="CSGCylinder3D" unique_id=1099876581]
+transform = Transform3D(-0.94258463, 0.030979447, -0.33252677, -0.013772628, -0.9984474, -0.053978905, -0.33368334, -0.046299964, 0.94154716, 0.08083375, 0.9256402, 0.46869278)
+inner_radius = 0.27082443
+outer_radius = 0.33967027
