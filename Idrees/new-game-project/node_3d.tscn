@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bng3hx22wmhdc" path="res://orangemonstrosity.svg" id="2_noarx"]
 [ext_resource type="Texture2D" uid="uid://bnh0dlf4sldti" path="res://basketwood.png" id="3_a0tk4"]
 [ext_resource type="Texture2D" uid="uid://dsu8u01q8yucf" path="res://basketloorD.png" id="3_r3fl7"]
+[ext_resource type="Texture2D" uid="uid://c1d1rm7o8jyu8" path="res://bigbackaboard.png" id="5_i5arm"]
+[ext_resource type="Texture2D" uid="uid://b7qajpudayvdf" path="res://tapered-metal-pole-png-haw78-mblt5lcqyawn6tta.png" id="6_wc5p8"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_a202f"]
 radius = 0.36533487
@@ -27,6 +29,12 @@ albedo_texture = ExtResource("3_a0tk4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wc5p8"]
 albedo_texture = ExtResource("3_a0tk4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4arys"]
+albedo_texture = ExtResource("5_i5arm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6iypd"]
+albedo_texture = ExtResource("6_wc5p8")
 
 [node name="Node3D" type="Node3D" unique_id=1623685032]
 
@@ -72,7 +80,7 @@ size = Vector3(1, 19.841461, 16.035278)
 material = SubResource("StandardMaterial3D_r3fl7")
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=709241372]
-transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, -1.3274415, -7.092889, 4.435801)
+transform = Transform3D(0.020234864, 0.04904259, -0.9985917, -0.08705898, 0.99508876, 0.047106452, 0.9959976, 0.08598318, 0.024405086, -0.47604275, -8.4477005, 5.2857747)
 size = Vector3(1, 32.28605, 16.035278)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=81523405]
@@ -92,15 +100,19 @@ material_override = SubResource("StandardMaterial3D_wc5p8")
 size = Vector3(1.2098389, 25.503616, 25.651031)
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=1179589626]
-transform = Transform3D(-0.02088128, 0.02858035, 0.99937356, -0.0904338, -0.9955478, 0.02658137, 0.9956835, -0.0898221, 0.023372937, -0.06589452, 1.0095015, -3.548994)
-size = Vector3(0.092285156, 0.60705566, 1.21875)
+transform = Transform3D(-0.01370883, 0.9926176, -0.014440595, 0.012686104, 0.02216449, 0.6640897, 0.54623777, 0.024396792, -0.015785644, -0.10071224, 1.0531274, -3.661104)
+material_override = SubResource("StandardMaterial3D_4arys")
+use_collision = true
+size = Vector3(0.02758789, 1.5604706, 1.2034912)
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="." unique_id=1099876581]
+transform = Transform3D(-0.94677716, -0.010493436, -0.3217172, 0.010799918, -0.9999418, 0.0008320409, -0.3217079, -0.0026867643, 0.94683444, -0.06989384, 0.6932181, -3.263434)
+inner_radius = 0.35551712
+outer_radius = 0.41236153
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=2115367572]
-transform = Transform3D(0.99847597, -0.052914795, 0.015679667, 0.05210661, 0.997482, 0.048110228, -0.018185928, -0.0472199, 0.998719, -0.117664814, 0.03896694, -3.6522248)
-radius = 0.047851563
-height = 1.5651855
-
-[node name="CSGTorus3D" type="CSGTorus3D" parent="CSGCylinder3D" unique_id=1099876581]
-transform = Transform3D(-0.94258463, 0.030979447, -0.33252677, -0.013772628, -0.9984474, -0.053978905, -0.33368334, -0.046299964, 0.94154716, 0.08083375, 0.9256402, 0.46869278)
-inner_radius = 0.27082443
-outer_radius = 0.33967027
+transform = Transform3D(-0.78709537, 0.011370642, 0.6167265, 0.052106608, 0.99748194, 0.048110228, -0.6146265, 0.070002876, -0.78570586, -0.070446044, 0.0041120797, -3.6535203)
+material_override = SubResource("StandardMaterial3D_6iypd")
+use_collision = true
+radius = 0.063964844
+height = 1.3831787

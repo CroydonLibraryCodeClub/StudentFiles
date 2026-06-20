@@ -35,9 +35,9 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="1"
-     inkscape:cx="373.5"
-     inkscape:cy="89.5"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="374.41304"
+     inkscape:cy="212.48559"
      inkscape:window-width="1883"
      inkscape:window-height="1055"
      inkscape:window-x="37"
@@ -83,4 +83,10 @@
      d="M 70.636928,439.57575 C -198.13932,-92.425164 768.19285,-154.64028 540.27635,444.90259"
      id="path2206"
      sodipodi:nodetypes="cc" />
+  <circle
+     id="path451"
+     style="fill:#1a1a1a;stroke:#000000"
+     cx="292.22089"
+     cy="107.22905"
+     r="0.35597834" />
 </svg>
