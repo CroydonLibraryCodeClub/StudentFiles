@@ -1,0 +1,6 @@
+print("hello")
+print(f'I am happy to be in phton it is an honour')
+print (f'how to play scrath and phyton')
+print(f'this is how you do it first of all play scrath and get better')
+print(f'i dont know')
+print (255-100)
