@@ -27,3 +27,4 @@ To get changes from the server, enter:
 git pull
 ```
 
+Test CC08
